@@ -1,10 +1,14 @@
 [dev]
 node1.lab.example.com
 node2.lab.example.com
-#[test]
-#node2.lab.example.com
 
-[balancer]
+[test]
+node2.lab.example.com
+
+[prod]
+node3.lab.example.com
+
+[balancers]
 node3.lab.example.com
 
 [webservers:children]
